@@ -30,15 +30,11 @@ body {
   top: 280px;
 }
 
-.landing .img10 img {
-  /* image 10 */
-
-  position: absolute;
-  width: 779px;
-  height: 589px;
-  left: -251px;
-  top: 420px;
-  background: url("image 10.png");
+.candy-teamsuccess {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    block-size:40%;
 }
 
 .landing .img11 img {
@@ -80,17 +76,7 @@ body {
   color: #000000;
 }
 
-.landing .img7 img {
-  /* image 7 */
 
-  position: relative;
-  width: 56px;
-  height: 66px;
-  left: 412px;
-  top: 335px;
-
-  background: url("./images/image 7.png");
-}
 
 .landing .reach {
   /* Reach your highest pontential and help others succeed too */
@@ -132,6 +118,7 @@ body {
   background: #76cccf;
   border-radius: 11px;
 }
+
 .landing .join-layout:hover {
   color: white;
   background-color: rgb(22, 177, 164);
@@ -194,97 +181,6 @@ body {
 
 .navbar-item:hover {
   color: rgb(243, 72, 101);
-}
-/* 74 vctors Hell! */
-
-/*.landing .v1 img{*/
-/* Vector 1 */
-/* position: absolute;
-    left: 76.73%;
-    right: 19.33%;
-    top: 36.62%;
-    bottom: 52.39%; 
-}*/
-
-.landing .v2 img {
-  /* Vector */
-  position: absolute;
-  left: 79.8%;
-  right: 8.75%;
-  top: 43.37%;
-  bottom: 31.02%;
-}
-
-.landing .v3 img {
-  /* Vector */
-  position: absolute;
-  left: 77.61%;
-  right: 16.27%;
-  top: 36.62%;
-  bottom: 52.39%;
-}
-
-.landing .v4 img {
-  /* Vector */
-  position: absolute;
-  left: 79.25%;
-  right: 9.28%;
-  top: 45.68%;
-  bottom: 29.51%;
-}
-
-.landing .v5 img {
-  /* Vector */
-  position: absolute;
-  left: 62.79%;
-  right: 30.01%;
-  top: 28.55%;
-  bottom: 55.79%;
-}
-
-.landing .v6 img {
-  /* Vector */
-  position: absolute;
-  left: 58.02%;
-  right: 35.27%;
-  top: 34.84%;
-  bottom: 55.49%;
-}
-
-.landing .v7 img {
-  /* Vector */
-  position: absolute;
-  left: 62.5%;
-  right: 32.07%;
-  top: 39.67%;
-  bottom: 54.33%;
-}
-
-.landing .v8 img {
-  /* Vector */
-  position: absolute;
-  left: 61.37%;
-  right: 29.75%;
-  top: 43.6%;
-  bottom: 31.55%;
-}
-
-.landing .v9 img {
-  /* Vector */
-  position: absolute;
-  left: 61.37%;
-  right: 33.62%;
-  top: 65.01%;
-  bottom: 22.39%;
-}
-
-.landing .v10 img {
-  /* Vector */
-  position: absolute;
-  left: 66.47%;
-  right: 29.13%;
-  top: 62.8%;
-  bottom: 24.91%;
 }
 
 #about {

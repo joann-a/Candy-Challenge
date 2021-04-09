@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>profile</title>
+        <title>home </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class = 'profile'>
-        <div class='Candy'>
-            <a href="landing.html">
+    <body class = "home">
+        <div class='candy_challenge'>
+            <a href='home.html'>
                 <img src="Candy Challenge.png">
             </a>
         </div>
@@ -21,36 +21,42 @@
               style="color: black;">About</a>
             </div>
             <div class="navbar-item">
-                <a class="navbar-item" href="store.html"
+                <a class="navbar-item" href="storepage.html"
                 style="color: black;">Candy Store</a>
             </div>
+
         </div>
         <div class = "candy amount">
             <img src = 'picture/candy.png'>
             <p>: number </p>
         </div>
-        <div class = 'avatar'>
-            <img src='avatar.png'>
+        <div class = "home_title">
+            <h1>The Home Page</h1>
         </div>
-        <div class = "User">
-            <h1>My</h1>
+        <div class = "your_challenges">
+            <p>Your challenges:</p>
         </div>
-        <div class = 'details'>
-            <h1>Details</h1>
-            <button type = "button" onclick="alert('add a function')">Edit</button>
+        <!--need a script here to control how many challenges you have and if you joined one-->
+        <div class = "challengeBlock">
+            <a href="challengeViewing.html">
+                <!-- 这个action要之后决定怎么做 ↓-->
+                <form class = "checkBoxes" action="html_form_action.php" method="get">
+                    <input type = "checkbox" name = "status" value = "join">
+                    <input type="submit" value="confirm">
+                </form>
+                <div class = 'otherAvatar'>
+                    <img src='other_avatar.png'>
+                </div>
+                <div class = 'challengepic'>
+                    <img src = 'challengpic.png'>
+                </div>
+                <div class = "challengecontent">
+                    <p>challenge contents</p>
+
+                </div>
+            </a>
         </div>
-        <div class = 'Userinfo'>
-            <p>UserName</p>
-            <div class='textBox'>
-                <p>yiY</p>
-            </div>
-        </div>
-        <div class = 'Userinfo'>
-            <p>Email</p>
-            <div class='textBox'>
-                <p>abcdefg@gmail.com</p>
-            </div>
-        </div>
+
         <div class="bottom">
             <div class = 'button1'>
                 <a href="home.html">
@@ -76,8 +82,8 @@
                 </a>
             </div>
         </div>
+
+
+
     </body>
-
-
-
 </html>
