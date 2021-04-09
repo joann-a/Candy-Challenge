@@ -100,23 +100,24 @@
 }
 
 .landing .join-layout {
-  /* Frame 2 */
-  /* Auto Layout */
+    /* Frame 2 */
+    /* Auto Layout */
 
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
 
-  position: absolute;
-  width: 128px;
-  height: 56px;
-  left: 110px;
-  top: 550px;
+    
+    text-decoration: none;
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    left: 110px;
+    top: 550px;
 
-  background: #76cccf;
-  border-radius: 11px;
+    background: #76CCCF;
+    border-radius: 11px;
 }
 
 .landing .join-text {
