@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>profile</title>
+        <title>store</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class = profile>
+    <body class = "store">
         <div class='Candy'>
-            <a href="landing.html">
+            <a href="homepage.html">
                 <img src="Candy Challenge.png">
             </a>
         </div>
@@ -15,31 +15,34 @@
             <div class='about'>
                 <a href='about.html'>About</a>
             </div>
-            
         </div>
         <div class = "candy amount">
             <img src = 'picture/candy.png'>
             <p>: number </p>
         </div>
-        <div class = 'avatar'>
-            <img src='avatar.png'>
+        <div class = 'store_title'>
+            <h1>The Candy Store</h1>
         </div>
-        <div class = 'details'>
-            <h1>My Details</h1>
-            <button type = "button" onclick="alert('add a function')">Edit</button>
-        </div>
-        <div class = 'Userinfo'>
-            <p>UserName</p>
-            <div class='textBox'>
-                <p>yiY</p>
+        <!--maybe need for loop-->
+        <!--button needs an onclick to do something or run function-->
+        <button type = "button" class = "objects" onclick="alert('Are you sure to purchase this?')">
+            <div class = 'objectname'>
+                <p>Netflyx gift card</p> 
             </div>
-        </div>
-        <div class = 'Userinfo'>
-            <p>Email</p>
-            <div class='textBox'>
-                <p>abcdefg@gmail.com</p>
+            <div class = "objectpic">
+                <img src= objectpic.png >
             </div>
-        </div>
+            <div class = "currency">
+                <img src = "candy.png">
+                
+            </div>
+            <div class = "price">
+                <p>: number</p>
+            </div>
+        </button>
+        <button type = "button" class = "mygifts">
+            <img src = "gift.png">
+        </button>
         <div class="bottom">
             <div class = 'button1'>
                 <a href="homepage.html">
@@ -66,7 +69,4 @@
             </div>
         </div>
     </body>
-
-
-
 </html>
