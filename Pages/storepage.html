@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>create </title>
+        <title>store</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class='landing'>
-        <div class='candy_challenge'>
-            <a href='homepage.html'>
+    <body class = "store">
+        <div class='Candy'>
+            <a href="homepage.html">
                 <img src="Candy Challenge.png">
             </a>
         </div>
@@ -15,41 +15,34 @@
             <div class='about'>
                 <a href='about.html'>About</a>
             </div>
-            
         </div>
         <div class = "candy amount">
             <img src = 'picture/candy.png'>
             <p>: number </p>
         </div>
-        <div class = "big_create">
-            <h>Create a new challenge</h>
-            <div class = 'createInfo'>
-                <p>Title</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="What do you want to call your challenge">
-            
-            </div>
-            <div class = 'createInfo'>
-                <p>Description</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="give a description">
-            
-            </div>
-            <div class = 'createInfo'>
-                <p>invite some friends</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="give a description">
-            
-            </div>
-
+        <div class = 'store_title'>
+            <h1>The Candy Store</h1>
         </div>
-        <input type="submit" value="Create" class="createBtn">
+        <!--maybe need for loop-->
+        <!--button needs an onclick to do something or run function-->
+        <button type = "button" class = "objects" onclick="alert('Are you sure to purchase this?')">
+            <div class = 'objectname'>
+                <p>Netflyx gift card</p> 
+            </div>
+            <div class = "objectpic">
+                <img src= objectpic.png >
+            </div>
+            <div class = "currency">
+                <img src = "candy.png">
+                
+            </div>
+            <div class = "price">
+                <p>: number</p>
+            </div>
+        </button>
+        <button type = "button" class = "mygifts">
+            <img src = "gift.png">
+        </button>
         <div class="bottom">
             <div class = 'button1'>
                 <a href="homepage.html">
@@ -75,9 +68,5 @@
                 </a>
             </div>
         </div>
-        
-            
-            
-                
     </body>
 </html>
