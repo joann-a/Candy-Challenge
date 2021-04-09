@@ -6,34 +6,70 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="create.css">
         <title>Create new challenge🍬</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class='create'>
-        <div class='candy_challenge'>
+    <body>
+        <script src="candy.js"></script>
+
+        <img class = "candybackground" src = "Candybackground.png">
+
+        <div class='CandyChallenge'>
             <a href='homepage.html'>
-                <img src="Candy Challenge.png">
+                <img src="CandyChallenge.png">
             </a>
         </div>
+
         <div class="navbar">
             <div>
-              <a class="navbar-item" href="about.html"
+              <a class="navbar-item" href="contact.html"
               style="color: black;">Contact</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="about.html"
+              <a class="navbar-item" href="About.html"
               style="color: black;">About</a>
             </div>
             <div class="navbar-item">
-                <a class="navbar-item" href="storepage.html"
-                style="color: black;">Candy Store</a>
+              <a class="navbar-item" href="signup.html"
+              style="color: black;">Join now</a>
             </div>
+        </div>
+        
+        <div class = "candy">
+            <img src = 'candy.png'>
+        </div>
+        <div class = "CandyAmount">
+            <p>:
+                <script>document.write(num_candy)</script>
+            </p>
+        </div>
 
+        <div class = "page_name1">
+            <p>Create <name class = "page_name2">newChallenge</name></p>
         </div>
-        <div class = "candy amount">
-            <img src = 'picture/candy.png'>
-            <p>: number </p>
+        
+        <div class = "create_title">
+            <p>Title</p>
+            <p class = "title_box">What do you want to call your challenge...</p>
         </div>
+
+        <div class = "create_discription">
+            <p>Description</p>
+            <p class = "discription_box">Give a description</p>
+        </div>
+
+        <div class = "create_invite">
+            <p>Invite some friends</p>
+            <p class = "invite_box">Give a description</p>
+        </div>
+
+        <button class = "create_button"></button>
+
+        <div class = "bottom">
+            <img src = "bottom_bar.png">
+            <a href = "store.html"><img class = "store_icon" src = "store_icon.png"></a>
+            <a href = "create.tml"><img class = "create_icon" src = "create_icon.png"></a>
+            <a href = "profile.html"><img class = "avatar_icon" src = "avatar_icon.png"></a>
+        </div>
+<!--
         <div class = "big_create">
             <h>Create a new challenge</h>
             <div class = 'createInfo'>
@@ -87,10 +123,6 @@
                     </div>
                 </a>
             </div>
-        </div>
-        
-            
-            
-                
+        </div> -->
     </body>
 </html>
