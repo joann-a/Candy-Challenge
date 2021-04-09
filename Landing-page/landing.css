@@ -1,6 +1,18 @@
+*,
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.brand-name {
+  position: fixed;
+}
+
 .landing {
   background-image: url("./images/landing-page-background.png");
   background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .landing img {
@@ -15,7 +27,7 @@
   /* border: 1px solid red; */
   position: absolute;
   left: 440px;
-  top: 350px;
+  top: 280px;
 }
 
 .landing .img10 img {
@@ -100,31 +112,36 @@
 }
 
 .landing .join-layout {
-    /* Frame 2 */
-    /* Auto Layout */
+  /* Frame 2 */
+  /* Auto Layout */
 
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  transition: all 1s;
+  color: black;
 
-    
-    text-decoration: none;
-    position: absolute;
-    width: 115px;
-    height: 40px;
-    left: 110px;
-    top: 550px;
+  text-decoration: none;
+  position: absolute;
+  width: 130px;
+  height: 55px;
+  left: 110px;
+  top: 550px;
 
-    background: #76CCCF;
-    border-radius: 11px;
+  background: #76cccf;
+  border-radius: 11px;
+}
+.landing .join-layout:hover {
+  color: white;
+  background-color: rgb(22, 177, 164);
 }
 
 .landing .join-text {
   /* Join now */
   width: 100%;
   position: static;
-  width: 108px;
+  width: 100px;
   height: 36px;
   left: 10px;
   top: 10px;
@@ -149,7 +166,7 @@
 .landing .navbar {
   /* About */
 
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: 27px;
   left: 1000px;
@@ -170,8 +187,14 @@
 
 .navbar-item {
   text-decoration: none;
+  color: black;
+  transition: all 0.5s;
+  font-family: "Poppins";
 }
 
+.navbar-item:hover {
+  color: rgb(243, 72, 101);
+}
 /* 74 vctors Hell! */
 
 /*.landing .v1 img{*/
@@ -262,4 +285,9 @@
   right: 29.13%;
   top: 62.8%;
   bottom: 24.91%;
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
 }
