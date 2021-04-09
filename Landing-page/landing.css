@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .brand-name {
   position: fixed;
 }
@@ -31,10 +35,10 @@ body {
 }
 
 .candy-teamsuccess {
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-    block-size:40%;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  block-size: 40%;
 }
 
 .landing .img11 img {
@@ -75,8 +79,6 @@ body {
 
   color: #000000;
 }
-
-
 
 .landing .reach {
   /* Reach your highest pontential and help others succeed too */
@@ -184,6 +186,28 @@ body {
 }
 
 #about {
-  height: 100vh;
+  /* border: 1px solid red; */
+  margin-top: 15vh;
+  height: 85vh;
   width: 100%;
+  padding: 3rem;
+  font-size: 3rem;
+  padding: 10rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+#about span {
+  color: rgb(207, 57, 82);
+}
+
+#about pre {
+  font-size: 7rem;
+}
+
+#about h1 {
+  margin: 1rem 0 1rem 0;
+  font-family: "Poppins-Italic";
+  font-size: 2rem;
 }
