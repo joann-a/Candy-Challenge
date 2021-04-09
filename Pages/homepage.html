@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="create.css">
-        <title>Create new challenge🍬</title>
+        <title>create </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body class='create'>
+    <body class = "home">
         <div class='candy_challenge'>
             <a href='homepage.html'>
                 <img src="Candy Challenge.png">
@@ -34,35 +30,33 @@
             <img src = 'picture/candy.png'>
             <p>: number </p>
         </div>
-        <div class = "big_create">
-            <h>Create a new challenge</h>
-            <div class = 'createInfo'>
-                <p>Title</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="What do you want to call your challenge">
-            
-            </div>
-            <div class = 'createInfo'>
-                <p>Description</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="give a description">
-            
-            </div>
-            <div class = 'createInfo'>
-                <p>invite some friends</p>
-
-            </div>
-            <div class='textBox'>
-                <input type="text" placeholder="give a description">
-            
-            </div>
-
+        <div class = "home_title">
+            <h1>The Home Page</h1>
         </div>
-        <input type="submit" value="Create" class="createBtn">
+        <div class = "your_challenges">
+            <p>Your challenges:</p>
+        </div>
+        <!--need a script here to control how many challenges you have and if you joined one-->
+        <div class = "challengeBlock">
+            <a href="challengeViewing">
+                <!-- 这个action要之后决定怎么做 ↓-->
+                <form class = "checkBoxes" action="html_form_action.php" method="get">
+                    <input type = "checkbox" name = "status" value = "join">
+                    <input type="submit" value="confirm">
+                </form>
+                <div class = 'otherAvatar'>
+                    <img src='other_avatar.png'>
+                </div>
+                <div class = 'challengepic'>
+                    <img src = 'challengpic.png'>
+                </div>
+                <div class = "challengecontent">
+                    <p>challenge contents</p>
+
+                </div>
+            </a>
+        </div>
+
         <div class="bottom">
             <div class = 'button1'>
                 <a href="homepage.html">
@@ -88,9 +82,8 @@
                 </a>
             </div>
         </div>
-        
-            
-            
-                
+
+
+
     </body>
 </html>
