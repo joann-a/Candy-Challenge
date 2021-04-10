@@ -4,7 +4,7 @@
 }
 
 .candybackground {
-    position: absolute;
+    position: fixed;
     width: 505px;
     height: 1263px;
     right: 10%;
@@ -12,16 +12,17 @@
   }
   
   .CandyChallenge {
-    position: absolute;
+    position: fixed;
     left: 2%;
     right: 76.39%;
     top: 3%;
     bottom: 0%;
+    z-index: 1;
   }
   
   .navbar {
     
-    position: absolute;
+    position: fixed;
     width: 400px;
     height: 27px;
     left: 70%;
@@ -45,34 +46,35 @@
   }
   
   .candy {
-    /* number of candy icon */
-    
-    position: absolute;
-    width: 132px;
+    position: fixed;
+    width: 150px;
     height: 55.21px;
     left: 2%;
-    top: 64px;
-    
-
+    top: 10%;
+  
+    border-radius: 10px;
+    background-color: white;
+    z-index: 1;
   }
   
-.CandyAmount {
+  .CandyAmount {
     /* text of amount of candies */
-    
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 28px;
-    left: 7%;
-    top: 64px;
-    
+    left: 6%;
+    top: 8%;
+  
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 190%;
     line-height: 28px;
-    
-    color: #F45238;
+  
+    color: #f45238;
+    z-index: 1;
   }
+
 .challengeBlock{
       /* Rectangle 9 */
 
@@ -88,23 +90,19 @@ border-radius: 20px;
 }
 
 .checkBlock{
-    /* Frame 2 */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
 
-/* Auto Layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 10px;
-
-position: absolute;
-width: 60px;
-height: 40px;
-right: 10%;
-top: 20px;
-
-background: #76CCCF;
-border-radius: 11px;
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  right: 10%;
+  top: 20px;
+  
+  background: #76CCCF;
+  border-radius: 11px;
 }
 
 .joinTxt{
@@ -180,14 +178,15 @@ align-items: flex-start;
 padding: 10px;
 
 position: absolute;
-width: 279px;
-height: 56px;
 left: 70px;
 bottom: 10%;
 
 background: #FF864E;
 border-radius: 11px;
+width: 24%;
+height: 5%;
 }
+
 .dueTxt{
     /* Due date: 11/04/2021 */
 

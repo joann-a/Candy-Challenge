@@ -1,115 +1,163 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="store.css">
-        <title>store</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        </style>   
-    </head>
-    <body class = "store">
-        <script src="candy.js"></script>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="store.css" />
+    <title>Store page</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>   
+  </head>
+  <body>
+    <script src="color.js"></script>
 
-        <div class='CandyChallenge'>
-            <a href="../Home-page/home.html">
-                <img src="CandyChallenge.png">
-            </a>
+    <!-- ↓ The top, background and bottom of the page ↓ -->
+    <script src="candy.js"></script>
+
+    <img class="candybackground" src="Candybackground.png" />
+
+    <div class="CandyChallenge">
+      <a href="../Home-page/home.html">
+        <img src="CandyChallenge.png" />
+      </a>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="../Store-page/store.html"
+          style="color: black"
+          >Candy store</a
+        >
+      </div>
+      <div>
+        <a
+          class="navbar-item"
+          href="../Landing-page/landing.html#about"
+          style="color: black"
+          >Contact</a
+        >
+      </div>
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="../Landing-page/landing.html#about"
+          style="color: black"
+          >About</a
+        >
+      </div>
+    </div>
+
+    <div class="candy">
+      <img style="width: 37%;" src="candy.png" />
+    </div>
+    <div class="CandyAmount">
+      <p>
+        :
+        <script>
+          document.write(num_candy);
+        </script>
+      </p>
+    </div>
+
+    <div class="bottom">
+      <img src="bottom_bar.png" />
+      <a href="../Store-page/store.html"
+        ><img class="store_icon" src="store_icon.png"
+      /></a>
+      <a href="../Create-page/create.html"
+        ><img class="create_icon" src="create_icon.png"
+      /></a>
+      <a href="../Profile-page/profilepage.html"
+        ><img class="avatar_icon" src="avatar_icon.png"
+      /></a>
+    </div>
+
+    <a href="../Mygift-page/mygift.html">
+      <img class = "mygifts" src = "mygifts.png">
+    </a>
+    <!-- ↑ The top, background and bottom of the page ↑ -->
+
+    <div class="page_name1">
+      <p>The <name class="page_name2">StorePage</name></p>
+    </div>
+
+    <!-- ↓ The content of the page ↓ -->
+    <div class="store">
+      <!-- ↓ Products ↓ -->
+      <button class="product_box" style="background-color: #FFC9B0;"
+      onclick="alert('Are you sure to purchase this?')">
+        <div class="box_product">
+          <p class="box_productname">Blind kit</p>
         </div>
-        <div class="navbar">
-            <div class="navbar-item">
-                <a class="navbar-item" href="../Store-page/store.html"
-                style="color: black;">Candy store</a>
-              </div>
-            <div>
-              <a class="navbar-item" href="../Landing-page/landing.html#about"
-              style="color: black;">Contact</a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="../Landing-page/landing.html#about"
-              style="color: black;">About</a>
-            </div>
+        <br>
+        <img class="box_img" src="gift_kit.jpg" />
+        <div class="price">
+          <img class="price_icon" src="candy.png">
+          <p class="price_amount">: 666</p>
         </div>
-        <div class = "candy">
-            <img src = 'candy.png'>
-            
-        </div><div class = "CandyAmount">
-            <p>:
-                <script>document.write(num_candy)</script>
-            </p>
+      </button>
+
+      <button class="product_box" style="background-color: #8FCDF4;"
+      onclick="alert('Are you sure to purchase this?')">
+        <div class="box_product">
+          <p class="box_productname">Netflix gift card</p>
         </div>
-        <div class = 'storeTitle'>
-            <p>The Candy Store</p>
+        <br>
+        <img class="box_img" src="gift_black.png" />
+        <div class="price">
+          <img class="price_icon" src="candy.png">
+          <p class="price_amount">: 455</p>
         </div>
-        <!--maybe need for loop-->
-        <!--button needs an onclick to do something or run function-->
-        <button type = "button" class = "giftblock" onclick="alert('Are you sure to purchase this?')">
-            <div class = 'giftname'>
-                <p>Netflix gift card (Starndard)</p> 
-            </div>
-            <div class = "giftpic">
-                <img src= giftpic.png >
-            </div>
-            <div class = "circle">
-                <div class = 'unit'>
-                    <img src = "candy.png">
-                </div>
-                
-            </div>
-            <div class = "price">
-                <p>: 9999</p>
-            </div>
-        </button>
-        <button type = "button" class = "giftblock2" onclick="alert('Are you sure to purchase this?')">
-            <div class = 'giftname'>
-                <p>Netflix gift card (Gloden)</p> 
-            </div>
-            <div class = "giftpic">
-                <img src= giftpic.png >
-            </div>
-            <div class = "circle">
-                <div class = 'unit'>
-                    <img src = "candy.png">
-                </div>
-                
-            </div>
-            <div class = "price">
-                <p>: 19999</p>
-            </div>
-        </button>
-        <button type = "button" class = "giftblock3" onclick="alert('Are you sure to purchase this?')">
-            <div class = 'giftname'>
-                <p>Netflix gift card (Exclusive)</p> 
-            </div>
-            <div class = "giftpic">
-                <img src= giftpic.png >
-            </div>
-            <div class = "circle">
-                <div class = 'unit'>
-                    <img src = "candy.png">
-                </div>
-                
-            </div>
-            <div class = "price">
-                <p>: 29999</p>
-            </div>
-        </button>
-        
-        <div  class = "mygifts">
-            <a href="../Mygift-page/mygift.html">
-                <img src = "gift.png">
-                <div class = 'mygiftText'>
-                    <p><b>Mygifts</b></p>
-                </div>
-            </a>
+      </button>
+
+
+      <button class="product_box" style="background-color: #ADCCC8;"
+      onclick="alert('Are you sure to purchase this?')">
+        <div class="box_product">
+          <p class="box_productname">Myer gift card</p>
         </div>
-        <div class = "bottom">
-            <img src = "bottom_bar.png">
-            <a href = "../Store-page/store.html"><img class = "store_icon" src = "store_icon.png"></a>
-            <a href = "../Create-page/create.html"><img class = "create_icon" src = "create_icon.png"></a>
-            <a href = "../Profile-page/profilepage.html"><img class = "avatar_icon" src = "avatar_icon.png"></a>
+        <br>
+        <img class="box_img" src="gift_yellow.png" />
+        <div class="price">
+          <img class="price_icon" src="candy.png">
+          <p class="price_amount">: 399</p>
         </div>
-    </body>
+      </button>
+
+      <br>
+      <br>
+
+      <button class="product_box" style="background-color: #FAE056;"
+      onclick="alert('Are you sure to purchase this?')">
+        <div class="box_product">
+          <p class="box_productname">Itunes gift card</p>
+        </div>
+        <br>
+        <img class="box_img" src="gift_blue.jpg" />
+        <br>
+        <div class="price">
+          <img class="price_icon" src="candy.png">
+          <p class="price_amount">: 799</p>
+        </div>
+      </button>
+      <!-- ↑ Products ↑ -->
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- ↑ The content of the page ↑ -->
+  </body>
 </html>
