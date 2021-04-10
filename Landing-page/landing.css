@@ -9,7 +9,7 @@ html {
 }
 
 .brand-name {
-  position: fixed;
+  position: absolute;
 }
 
 .landing {
@@ -155,7 +155,7 @@ html {
 .landing .navbar {
   /* About */
 
-  position: fixed;
+  position: absolute;
   width: 400px;
   height: 27px;
   left: 70%;
