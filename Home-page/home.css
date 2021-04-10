@@ -169,8 +169,35 @@
     padding: 1%;
 
     border-radius: 20px;
+    border-width: 0px;
     background: #FFC9B0;
     color: white;
+  }
+
+  .box_user {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+  }
+
+  .box_avatar {
+    display: inline;
+    top: 0%;
+    left: 0%;
+    width: 35%;
+  }
+
+  .box_username {
+    display: inline;
+
+    font-family: Roboto;
+    font-size: 150%;
+    color: #000000;
+  }
+
+  .box_img {
+      width: 100%;
+      object-fit: cover;
   }
   
   /* #two {
