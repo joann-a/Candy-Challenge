@@ -9,7 +9,7 @@ html {
 }
 
 .brand-name {
-  position: fixed;
+  position: absolute;
 }
 
 .landing {
