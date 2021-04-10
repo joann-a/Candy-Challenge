@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="create.css">
-        <title>Create new challenge🍬</title>
+        <title>Create new challenge</title>
     </head>
     <body>
         <script src="candy.js"></script>
@@ -19,18 +19,19 @@
         </div>
 
         <div class="navbar">
+            <div class="navbar-item">
+                <a class="navbar-item" href="#"
+                style="color: black;">Candy store</a>
+              </div>
             <div>
               <a class="navbar-item" href="contact.html"
               style="color: black;">Contact</a>
             </div>
             <div class="navbar-item">
-              <a class="navbar-item" href="About.html"
+              <a class="navbar-item" href="about.html"
               style="color: black;">About</a>
             </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="signup.html"
-              style="color: black;">Candy store</a>
-            </div>
+            
         </div>
         
         <div class = "candy">
@@ -47,19 +48,39 @@
         </div>
         
         <div class = "create_title">
-            <p>Title</p>
-            <p class = "title_box">What do you want to call your challenge...</p>
+            <p class="Title">Title</p>
+            <textarea class="title_box" placeholder="What do you want to call your challenge..."></textarea>
         </div>
-
+        
         <div class = "create_discription">
             <p>Description</p>
-            <p class = "discription_box">Give a description</p>
+            <textarea  class="discription_box"  placeholder="Give a description"></textarea>
+        </div>
+        <div class='time'>
+            <div class="start_time">
+                <label for="start">Start date:</label>
+                <input type="date" id="start" name="trip-start"
+                    value="2021-4-10"
+                    min="2021-4-10" max="2050-12-31">
+                    
+                <input type="time" id="appt" name="appt"
+                        min="00:00" max="12:00" required>
+            </div>
+            <div class="end_time">
+                <label for="end">End date:</label>
+                <input type="date" id="end" name="trip-end"
+                    value="2021-4-10"
+                    min="2021-4-10" max="2050-12-31">
+                <input type="time" id="appt" name="appt"
+                    min="00:00" max="12:00" required>
+            </div>
+
         </div>
 
-        <div class = "create_invite">
+        <!-- <div class = "create_invite">
             <p>Invite some friends</p>
-            <p class = "invite_box">Give a description</p>
-        </div>
+            <textarea  class="invite_box"  placeholder="Invite friends"></textarea>
+        </div> -->
 
         <button class = "create_button"></button>
 

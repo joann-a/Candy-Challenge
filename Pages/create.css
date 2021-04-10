@@ -2,190 +2,227 @@
   position: absolute;
   width: 505px;
   height: 1263px;
-  left: 877px;
+  right: 10%;
   top: -214px;
 }
 
 .CandyChallenge {
-    position: absolute;
-    left: 0%;
-    right: 76.39%;
-    top: 0%;
-    bottom: 0%;
+  position: absolute;
+  left: 2%;
+  right: 76.39%;
+  top: 3%;
+  bottom: 0%;
 }
 
- .navbar {
+.navbar {
   
-    position: absolute;
-    width: 400px;
-    height: 27px;
-    left: 70%;
-    top: 5%;
-    justify-content: space-between;
-  
-    display: flex;
-  
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    line-height: 27px;
-    /* identical to box height */
-  
-    color: black;
-  }
+  position: absolute;
+  width: 400px;
+  height: 27px;
+  left: 70%;
+  top: 5%;
+  justify-content: space-between;
 
-  .navbar-item {
+  display: flex;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: black;
+}
+
+.navbar-item {
     text-decoration: none;
-  }
+}
 
-  .candy {
-      /* number of candy icon */
-      
-      position: absolute;
-      width: 132px;
-      height: 55.21px;
-      left: 0px;
-      top: 50px;
-      
-      transform: rotate(-37.37deg);
-  }
-
-  .CandyAmount {
-      /* text of amount of candies */
-      
-      position: absolute;
-      width: 80px;
-      height: 28px;
-      left: 60px;
-      top: 64px;
-      
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 28px;
-      
-      color: #F45238;
-  }
+.candy {
+  /* number of candy icon */
   
-  .page_name1 {
-      /* title of a page */
-      position: absolute;
-      width: 436px;
-      height: 54px;
-      left: 72px;
-      top: 120px;
-      
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 54px;
-      
-      color: #000000;
-  }
+  position: absolute;
+  width: 132px;
+  height: 55.21px;
+  left: 2%;
+  top: 50px;
+  
+  transform: rotate(-37.37deg);
+}
 
-  name.page_name2 {
-    /* title of a page */
-    position: absolute;
-    width: 200px;
-    height: 54px;
-    left: 115px;
-    top: 35px;
-    
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 54px;
-    
-    color: #E073B3;
-  }
+.CandyAmount {
+  /* text of amount of candies */
+  
+  position: absolute;
+  width: 80px;
+  height: 28px;
+  left: 7%;
+  top: 64px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  
+  color: #F45238;
+}
+  
+.page_name1 {
+  /* title of a page */
+  position: absolute;
+  width: 436px;
+  height: 54px;
+  left: 72px;
+  top: 120px;
+  
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  
+  color: #000000;
+}
 
-  .title_box {
-      /* Auto Layout */
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 10px;
-      
-      position: absolute;
-      width: 481px;
-      height: 30px;
-      left: 0px;
-      top: 200x;
-      
-      background: #ECECEC;
-      border-radius: 6px;
-  }
+name.page_name2 {
+  /* title of a page */
+  position: absolute;
+  width: 200px;
+  height: 54px;
+  left: 115px;
+  top: 35px;
 
-  .create_title {
-      /* Title */
-      position: absolute;
-      width: 28px;
-      height: 16px;
-      left: 72px;
-      top: 200px;
-      
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 16px;
-      
-      color: #000000;
-  }
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
 
-  .create_discription {
-    position: absolute;
-    width: 71px;
-    height: 16px;
-    left: 72px;
-    top: 330px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    
-    color: #000000;
-  }
+  color: #E073B3;
+}
 
-  .discription_box {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    
-    position: absolute;
-    width: 481px;
-    height: 90px;
-    left: 0px;
-    top: 45px;
-    
-    background: #ECECEC;
-    border-radius: 6px;
-  }
+.title_box {
+  /* Auto Layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  
+  position: absolute;
+  width: 481px;
+  height: 30px;
+  left: 0px;
+  top: 2.5rem;
+  
+  border: none;
+  background: #ECECEC;
+  border-radius: 6px;
+}
 
-  .create_invite {
-    position: absolute;
-    width: 119px;
-    height: 16px;
-    left: 72px;
-    top: 520px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    
-    color: #000000;
-  }
+.create_title {
+  /* Title */
+  position: absolute;
+  width: 28px;
+  height: 16px;
+  left: 72px;
+  top: 14rem;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #000000;
+}
 
-  .invite_box {
+.create_title p{
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.create_discription {
+  position: absolute;
+  width: 71px;
+  height: 16px;
+  left: 72px;
+  top: 330px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #000000;
+}
+
+.create_discription p{
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.discription_box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  
+  position: absolute;
+  width: 481px;
+  height: 90px;
+  left: 0px;
+  top: 2.5rem;
+  
+  border: none;
+  background: #ECECEC;
+  border-radius: 6px;
+}
+
+.start_time {
+  position: absolute;
+  width: 119px;
+  height: 16px;
+  left: 72px;
+  top: 31.5rem;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+}
+
+
+.end_time {
+  position: absolute;
+  width: 119px;
+  height: 16px;
+  left: 20rem;
+  top: 31.5rem;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #000000;
+}
+
+.time label {
+  display: block;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+  /* .invite_box {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -199,7 +236,7 @@
     
     background: #ECECEC;
     border-radius: 6px;
-  }
+  } */
 
   .create_button {
     display: flex;
@@ -219,10 +256,10 @@
 
   .bottom {
     position: fixed;
-    width: 1500px;
-    height: 150px;
+    width: 100%;
+    height: 7rem;
     left: 0px;
-    top: 690px;
+    bottom: 0;
     
     background: #D3FFFA;
   }
@@ -231,21 +268,21 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    left: 252px;
-    top: 0px;
+    left: 20%;
+    top: 5px;
   }
 
   .create_icon {
     position: absolute;
     width: 100px;
     height: 100px;
-    left: 660px;
-    top: 0px;
+    left: 47%;
+    top: 5px;
   }
 
   .avatar_icon {
     position: absolute;
     left: 75.14%;
-    right: 17.92%;
-    top: 0px;
+    right: 20%;
+    top: 5px;
   }
