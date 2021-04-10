@@ -58,7 +58,7 @@
 .CandyAmount {
   /* text of amount of candies */
   position: fixed;
-  width: 80px;
+  width: 100px;
   height: 28px;
   left: 6%;
   top: 8%;
