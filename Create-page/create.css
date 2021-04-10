@@ -250,9 +250,26 @@ label {
     left: 70px;
     top: 700px;
 
-    background: url(create_button.png);
+    background: #76CCCF;
     border-radius: 13px;
+    border-width: 0ch;
   }
+
+  .create_button_text {
+    position: static;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500%;
+    font-size: 190%;
+    line-height: 150%;
+    
+    color: #FFFFFF;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0% 10%;
+   }
 
   .bottom {
     position: fixed;
