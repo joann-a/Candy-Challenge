@@ -40,17 +40,17 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
-    document.querySelectorAll(".form__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupPassword" && e.target.value.length > 0 && e.target.value.length < 6) {
-                setInputError(inputElement, "Password must be at least  characters in length");
-            }
-        });
+    // document.querySelectorAll(".form__input").forEach(inputElement => {
+    //     inputElement.addEventListener("blur", e => {
+    //         if (e.target.id === "signupPassword" && e.target.value.length > 0 && e.target.value.length < 6) {
+    //             setInputError(inputElement, "Password must be at least  characters in length");
+    //         }
+    //     });
 
-        inputElement.addEventListener("input", e => {
-            clearInputError(inputElement);
-        });
-    });
+    //     inputElement.addEventListener("input", e => {
+    //         clearInputError(inputElement);
+    //     });
+    // });
 
     
     createAccountForm.addEventListener("submit", e => {
@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 var user = userCredential.user;
                 // ...
                 alert("Welcome " + email);
+                window.location = "../Home-page/home.html";
                 
             })
             .catch((error) => {
