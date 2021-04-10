@@ -1,13 +1,17 @@
 
 
 
-// function setFormMessage(formElement, type, message) {
-//     const messageElement = formElement.querySelector(".form__message");
+function setFormMessage(formElement, type, message) {
+    const messageElement = formElement.querySelector(".form__message");
 
-//     messageElement.textContent = message;
-//     messageElement.classList.remove("form__message--success", "form__message--error");
-//     messageElement.classList.add(`form__message--${type}`);
-// }
+    messageElement.textContent = message;
+    messageElement.classList.remove("form__message--success", "form__message--error");
+    messageElement.classList.add(`form__message--${type}`);
+}
+function clearFormMessage(message) {
+    messageElement.classList.remove(message);
+    
+}
 
 
 // function setInputError(inputElement, message) {
@@ -15,10 +19,10 @@
 //     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
 // }
 
-// function clearInputError(inputElement) {
-//     inputElement.classList.remove("form__input--error");
-//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
-// }
+function clearInputError(inputElement) {
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
@@ -44,8 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
         var name = document.getElementById("signupUsername").value;
         var email = document.getElementById("signupEmail").value;
         var password = document.getElementById("signupPassword").value;
-        window.alert(name + " " + email + " " + password);
-
         
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
@@ -67,9 +69,26 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
 
         // login
-        
+        var email = document.getElementById("loginEmail").value;
+        var password = document.getElementById("loginPassword").value;
 
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
+        firebase.auth().signInWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in
+                var user = userCredential.user;
+                // ...
+                alert("Welcome " + email);
+                
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                setFormMessage(loginForm, "error", error.message);
+                
+            });
+            setFormMessage(loginForm, "error", "");
+        
+        
     });
 
     
