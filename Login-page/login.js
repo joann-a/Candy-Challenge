@@ -40,6 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (e.target.id === "signupPassword" && e.target.value.length > 0 && e.target.value.length < 6) {
+                setInputError(inputElement, "Password must be at least  characters in length");
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        });
+    });
+
     
     createAccountForm.addEventListener("submit", e => {
         e.preventDefault();
@@ -54,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Signed in 
                 var user = userCredential.user;
                 // ...
+                alert("Sign Up");
             })
             .catch((error) => {
                 var errorCode = error.code;
@@ -62,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert(errorMessage);
             });
         
-        alert("Sign Up");
+        
     });
 
     loginForm.addEventListener("submit", e => {
