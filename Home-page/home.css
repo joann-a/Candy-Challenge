@@ -50,8 +50,8 @@
   left: 2%;
   top: 10%;
 
-  border-radius: 10%;
-  background-color: rgba(255, 255, 255, 0.479);
+  border-radius: 10px;
+  background-color: white;
   z-index: 1;
 }
 
