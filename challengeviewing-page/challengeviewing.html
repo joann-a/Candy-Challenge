@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="store.css">
-        <title>store</title>
+        <link rel="stylesheet" href="challengeviewing.css">
+        <title>challengeViewing</title>
     </head>
-    <body class = "store">
+    <body class = "challengeViewing">
         <script src="candy.js"></script>
+        <img class = "candybackground" src = "Candybackground.png">
 
         <div class='CandyChallenge'>
-            <a href="home.html">
+            <a href='home.html'>
                 <img src="CandyChallenge.png">
             </a>
         </div>
@@ -37,36 +38,38 @@
                 <script>document.write(num_candy)</script>
             </p>
         </div>
-        <div class = 'storeTitle'>
-            <p>The Candy Store</p>
-        </div>
-        <!--maybe need for loop-->
-        <!--button needs an onclick to do something or run function-->
-        <button type = "button" class = "giftblock" onclick="alert('Are you sure to purchase this?')">
-            <div class = 'giftname'>
-                <p>Netflyx gift card</p> 
-            </div>
-            <div class = "giftpic">
-                <img src= giftpic.png >
-            </div>
-            <div class = "circle">
-                <div class = 'unit'>
-                    <img src = "candy.png">
-                </div>
-                
-            </div>
-            <div class = "price">
-                <p>: 9999</p>
-            </div>
-        </button>
         
-        <div  class = "mygifts">
-            <a href="mygift.html">
-                <img src = "gift.png">
-                <div class = 'mygiftText'>
-                    <p><b>Mygifts</b></p>
+        <div class = "challengeBlock">
+            <!--不确定action             ↓-->
+            <button type = 'button' class = "checkBlock" onclick = "alert('Added to your challenge')">
+                <div class = 'joinTxt'>
+                    <p>Join</p>
                 </div>
-            </a>
+            </button>
+            <div class = 'creatorAvatar'>
+                <img src='creatoravatar.png'>
+            </div>
+            <div class = 'creatorName'>
+                <p>Adsa</p>
+            </div>
+            <div class = "challengepic">
+                <img src = "challengepic.png">
+            </div>
+            <div class = "challengeContent">
+                <p>
+                    <script>document.write(challenge_content)</script>
+                </p>
+            </div>
+            <div class = "dueDateBlock">
+                <div class = "dueTxt">
+                    <p>Due date:</p>
+                </div>
+                <div class = "date">
+                    <p>
+                        <script>document.write(due_date)</script>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class = "bottom">
             <img src = "bottom_bar.png">

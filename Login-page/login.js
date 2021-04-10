@@ -1,3 +1,6 @@
+
+
+
 function setFormMessage(formElement, type, message) {
     const messageElement = formElement.querySelector(".form__message");
 
@@ -5,11 +8,16 @@ function setFormMessage(formElement, type, message) {
     messageElement.classList.remove("form__message--success", "form__message--error");
     messageElement.classList.add(`form__message--${type}`);
 }
-
-function setInputError(inputElement, message) {
-    inputElement.classList.add("form__input--error");
-    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+function clearFormMessage(message) {
+    messageElement.classList.remove(message);
+    
 }
+
+
+// function setInputError(inputElement, message) {
+//     inputElement.classList.add("form__input--error");
+//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+// }
 
 function clearInputError(inputElement) {
     inputElement.classList.remove("form__input--error");
@@ -32,18 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
-    loginForm.addEventListener("submit", e => {
-        e.preventDefault();
-
-        // Perform your AJAX/Fetch login
-
-        setFormMessage(loginForm, "error", "Invalid username/password combination");
-    });
-
     document.querySelectorAll(".form__input").forEach(inputElement => {
         inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 4) {
-                setInputError(inputElement, "Username must be at least 4 characters in length");
+            if (e.target.id === "signupPassword" && e.target.value.length > 0 && e.target.value.length < 6) {
+                setInputError(inputElement, "Password must be at least  characters in length");
             }
         });
 
@@ -51,4 +51,62 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInputError(inputElement);
         });
     });
+
+    
+    createAccountForm.addEventListener("submit", e => {
+        e.preventDefault();
+        // sign up
+
+        var name = document.getElementById("signupUsername").value;
+        var email = document.getElementById("signupEmail").value;
+        var password = document.getElementById("signupPassword").value;
+        
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in 
+                var user = userCredential.user;
+                // ...
+                alert("Sign Up");
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // ..
+                alert(errorMessage);
+            });
+        
+        
+    });
+
+    loginForm.addEventListener("submit", e => {
+        e.preventDefault();
+
+        // login
+        var email = document.getElementById("loginEmail").value;
+        var password = document.getElementById("loginPassword").value;
+
+        firebase.auth().signInWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in
+                var user = userCredential.user;
+                // ...
+                alert("Welcome " + email);
+                
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                setFormMessage(loginForm, "error", error.message);
+                
+            });
+            setFormMessage(loginForm, "error", "");
+        
+        
+    });
+
+    
 });
+
+
+
+
