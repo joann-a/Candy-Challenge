@@ -38,32 +38,27 @@
 .navbar-item {
     text-decoration: none;
 }
-
-.candy {
-  /* number of candy icon */
   
+.candy {
   position: absolute;
   width: 132px;
   height: 55.21px;
   left: 2%;
-  top: 50px;
-  
-  transform: rotate(-37.37deg);
+  top: 10%;
 }
 
 .CandyAmount {
   /* text of amount of candies */
-  
   position: absolute;
   width: 80px;
   height: 28px;
-  left: 7%;
-  top: 64px;
+  left: 6%;
+  top: 8%;
   
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 190%;
   line-height: 28px;
   
   color: #F45238;
