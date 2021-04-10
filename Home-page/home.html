@@ -4,10 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="create.css">
-        <title>Create new challenge</title>
+        <link rel="stylesheet" href="home.css">
+        <title>Home page</title>
     </head>
     <body>
+        <!-- ↓ The top, background and bottom of the page ↓ -->
         <script src="candy.js"></script>
 
         <img class = "candybackground" src = "Candybackground.png">
@@ -20,7 +21,7 @@
 
         <div class="navbar">
             <div class="navbar-item">
-                <a class="navbar-item" href="#"
+                <a class="navbar-item" href="store.html"
                 style="color: black;">Candy store</a>
               </div>
             <div>
@@ -31,9 +32,8 @@
               <a class="navbar-item" href="about.html"
               style="color: black;">About</a>
             </div>
-            
         </div>
-        
+
         <div class = "candy">
             <img src = 'candy.png'>
         </div>
@@ -42,17 +42,39 @@
                 <script>document.write(num_candy)</script>
             </p>
         </div>
-        <div class = "home_title">
+
+        <div class = "bottom">
+            <img src = "bottom_bar.png">
+            <a href = "store.html"><img class = "store_icon" src = "store_icon.png"></a>
+            <a href = "create.tml"><img class = "create_icon" src = "create_icon.png"></a>
+            <a href = "profile.html"><img class = "avatar_icon" src = "avatar_icon.png"></a>
+        </div>
+        <!-- ↑ The top, background and bottom of the page ↑ -->
+
+        <div class = "page_name1">
+            <p>The <name class = "page_name2">HomePage</name></p>
+        </div>
+
+        <!-- ↓ Your challenge ↓ -->
+        <div class = "your_challenge">
+            <p class = "your_challenge_title">Your Challenge :</p>
+            <div class = "challenge1">
+                <button class = "challenge_background"></button>
+            </div>
+        </div>
+        <!-- ↑ Your challenge ↑ -->
+        
+        <!-- <div class = "home_title">
             <h1>The Home Page</h1>
         </div>
         <div class = "your_challenges">
             <p>Your challenges:</p>
-        </div>
+        </div> -->
         <!--need a script here to control how many challenges you have and if you joined one-->
-        <div class = "challengeBlock">
-            <a href="challengeViewing.html">
+        <!-- <div class = "challengeBlock">
+            <a href="challengeViewing.html"> -->
                 <!-- 这个action要之后决定怎么做 ↓-->
-                <form class = "checkBoxes" action="html_form_action.php" method="get">
+                <!-- <form class = "checkBoxes" action="html_form_action.php" method="get">
                     <input type = "checkbox" name = "status" value = "join">
                     <input type="submit" value="confirm">
                 </form>
@@ -93,7 +115,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
 
 
 
