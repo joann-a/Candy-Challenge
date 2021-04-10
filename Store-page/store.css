@@ -81,107 +81,314 @@ color: #000000;
 
 }
 .giftblock{
-/* Rectangle 9 */
+    /* Rectangle 9 */
 
-position: absolute;
-left: 9.58%;
-right: 65.14%;
-width : 22%;
-top: 30.21%;
-bottom: 20%;
+    position: absolute;
+    left: 9.58%;
+    right: 65.14%;
+    width : 22%;
+    top: 30.21%;
+    bottom: 20%;
 
-background: #FFC9B0;
-border-radius: 20px;
+    background: #FFC9B0;
+    border-radius: 20px;
 
+    }
+    .giftname{
+        /* Netflyx gift card */
+
+
+    position: absolute;
+    left: 2%;
+    right: 0%;
+    top: 5.7%;
+    bottom: 75.78%;
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+
+    color: #000000;
+
+    }
+    .giftpic{
+        /* Image */
+
+
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 22%;
+    bottom: 58.01%;
+    }
+    .circle{
+    /* Ellipse 2 */
+
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 30px;
+    top: 255px;
+    border-radius: 30px;
+
+    background: #FFFFFF;
+    }
+    .price{
+        /* : 10000 */
+
+
+    position: absolute;
+    width: 80px;
+    height: 28px;
+    left: 100px;
+    top: 250px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+
+    }
+
+    .mygifts{
+        /* Vector */
+
+    position: absolute;
+    left: 1.67%;
+    right: 93.4%;
+    top: 60%;
+    bottom: 20.67%;
+    }
+    .mygiftText{
+        /* my gifts */
+
+
+    position: absolute;
+    width: 114px;
+    height: 35px;
+    left: 0px;
+    top: 40px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
 }
-.giftname{
-    /* Netflyx gift card */
+.giftblock2{
+    /* Rectangle 9 */
+
+    position: absolute;
+    left: 35%;
+    right: 65.14%;
+    width : 22%;
+    top: 30.21%;
+    bottom: 20%;
+
+    background: #FFC9B0;
+    border-radius: 20px;
+
+    }
+    .giftname{
+        /* Netflyx gift card */
 
 
-position: absolute;
-left: 2%;
-right: 0%;
-top: 5.7%;
-bottom: 75.78%;
+    position: absolute;
+    left: 2%;
+    right: 0%;
+    top: 5.7%;
+    bottom: 75.78%;
 
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
 
-color: #000000;
+    color: #000000;
 
+    }
+    .giftpic{
+        /* Image */
+
+
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 22%;
+    bottom: 58.01%;
+    }
+    .circle{
+    /* Ellipse 2 */
+
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 30px;
+    top: 255px;
+    border-radius: 30px;
+
+    background: #FFFFFF;
+    }
+    .price{
+        /* : 10000 */
+
+
+    position: absolute;
+    width: 80px;
+    height: 28px;
+    left: 100px;
+    top: 250px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+
+    }
+
+    .mygifts{
+        /* Vector */
+
+    position: absolute;
+    left: 1.67%;
+    right: 93.4%;
+    top: 60%;
+    bottom: 20.67%;
+    }
+    .mygiftText{
+        /* my gifts */
+
+
+    position: absolute;
+    width: 114px;
+    height: 35px;
+    left: 0px;
+    top: 40px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
 }
-.giftpic{
-    /* Image */
+
+.giftblock3{
+    /* Rectangle 9 */
+
+    position: absolute;
+    left: 60%;
+    right: 65.14%;
+    width : 22%;
+    top: 30.21%;
+    bottom: 20%;
+
+    background: #FFC9B0;
+    border-radius: 20px;
+
+    }
+    .giftname{
+        /* Netflyx gift card */
 
 
-position: absolute;
-left: 4%;
-right: 4%;
-top: 22%;
-bottom: 58.01%;
-}
-.circle{
-/* Ellipse 2 */
-
-position: absolute;
-width: 55px;
-height: 55px;
-left: 30px;
-top: 255px;
-border-radius: 30px;
-
-background: #FFFFFF;
-}
-.price{
-    /* : 10000 */
+    position: absolute;
+    left: 2%;
+    right: 0%;
+    top: 5.7%;
+    bottom: 75.78%;
 
 
-position: absolute;
-width: 80px;
-height: 28px;
-left: 100px;
-top: 250px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 28px;
+    color: #000000;
 
-color: #000000;
-
-}
-
-.mygifts{
-    /* Vector */
-
-position: absolute;
-left: 1.67%;
-right: 93.4%;
-top: 60%;
-bottom: 20.67%;
-}
-.mygiftText{
-    /* my gifts */
+    }
+    .giftpic{
+        /* Image */
 
 
-position: absolute;
-width: 114px;
-height: 35px;
-left: 0px;
-top: 40px;
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    top: 22%;
+    bottom: 58.01%;
+    }
+    .circle{
+    /* Ellipse 2 */
 
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 36px;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 30px;
+    top: 255px;
+    border-radius: 30px;
 
-color: #000000;
+    background: #FFFFFF;
+    }
+    .price{
+        /* : 10000 */
+
+
+    position: absolute;
+    width: 80px;
+    height: 28px;
+    left: 100px;
+    top: 250px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #000000;
+
+    }
+
+    .mygifts{
+        /* Vector */
+
+    position: absolute;
+    left: 1.67%;
+    right: 93.4%;
+    top: 60%;
+    bottom: 20.67%;
+    }
+    .mygiftText{
+        /* my gifts */
+
+
+    position: absolute;
+    width: 114px;
+    height: 35px;
+    left: 0px;
+    top: 40px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
 }
 
 .bottom {
