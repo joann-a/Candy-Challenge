@@ -80,11 +80,12 @@
     <div class="col1">
     <pre><span>Contact</span> Us 🤝</pre>
     <h1>We would love to chat</h1>
-    <form action="" class="contact-form">
+    <form onclick="showMessage()" class="contact-form">
       <input type="text" class="form-input" placeholder="Your Email">
       <input type="text" class="form-about form-input" placeholder="What would you like to ask us? We are listening...">
       <button class="form-button" type="submit">Submit</button>
     </form>
+    <h1 class="contact-message " style="display: none; transition: all 1s;">Thanks! We will get in touch with you soon 😊</h1>
   </div>
   <div class="col2">
     <img class="earth" src="./images/World Connection _Outline.svg" />
@@ -98,5 +99,7 @@
     </div>
     <div class="copyright">Copyright 2021 ~ Phoenix Wright</div>
   </footer>
+
+  <script src="landing.js"></script>
   </body>
 </html>
