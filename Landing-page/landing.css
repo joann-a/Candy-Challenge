@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -277,7 +277,7 @@ footer {
 .copyright {
   font-family: "Poppins-Medium";
   font-size: 1rem;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 .contact-form {
@@ -293,11 +293,10 @@ footer {
   height: 10vh;
 }
 
-
 .form-input {
   font-family: "Poppins-Medium";
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid rgb(214, 214, 214);
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -334,7 +333,18 @@ footer {
   }
 
   p {
-    font-size: 1rem;
+    font-family: "Poppins-Medium";
+    font-size: 1.5rem;
+  }
+
+  .centered-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lightbulb-img {
+    width: 12rem;
+    height: 12rem;
   }
 
   .candy-dotpoint {
@@ -352,10 +362,12 @@ footer {
     left: 10%;
     top: 7rem;
   }
+
   #about,
   #contact {
     font-size: 1rem;
     padding: 2rem;
+    padding-bottom: 0;
   }
 
   #about h1,
@@ -377,6 +389,7 @@ footer {
   #about,
   #contact {
     padding: 1rem 2rem 1rem 2rem;
+    padding-bottom: 0;
     font-size: 2rem;
     /* background-color: lavender; */
   }
@@ -409,6 +422,7 @@ footer {
     font-size: 2rem;
     /* background-color: lavender; */
     padding: 10rem;
+    padding-bottom: 0;
   }
   #about pre,
   #contact pre {
