@@ -4,10 +4,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="store.css">
-        <title>store</title>
+        <link rel="stylesheet" href="mygift.css">
+        <title>Mygift</title>
     </head>
-    <body class = "store">
+    <body class = 'mygift'>
         <script src="candy.js"></script>
 
         <div class='Candy'>
@@ -37,17 +37,16 @@
                 <script>document.write(num_candy)</script>
             </p>
         </div>
-        <div class = 'storeTitle'>
-            <p>The Candy Store</p>
+        <div class = 'giftTitle'>
+            <p>My gifts</p>
         </div>
-        <!--maybe need for loop-->
-        <!--button needs an onclick to do something or run function-->
-        <button type = "button" class = "giftblock" onclick="alert('Are you sure to purchase this?')">
-            <div class = 'giftname'>
-                <p>Netflyx gift card</p> 
+        <!--needs script here to check if you have purchased anything-->
+        <div class = "boughtgiftblock">
+            <div class = "giftname">
+                <p>Netflyx gift card</p>
             </div>
             <div class = "giftpic">
-                <img src= giftpic.png >
+                <img src = giftpic.png>
             </div>
             <div class = "circle">
                 <div class = 'unit'>
@@ -58,15 +57,6 @@
             <div class = "price">
                 <p>: 9999</p>
             </div>
-        </button>
-        
-        <div  class = "mygifts">
-            <a href="mygift.html">
-                <img src = "gift.png">
-                <div class = 'mygiftText'>
-                    <p><b>Mygifts</b></p>
-                </div>
-            </a>
         </div>
         <div class = "bottom">
             <img src = "bottom_bar.png">
@@ -74,5 +64,6 @@
             <a href = "create.html"><img class = "create_icon" src = "create_icon.png"></a>
             <a href = "profile.html"><img class = "avatar_icon" src = "avatar_icon.png"></a>
         </div>
+
     </body>
 </html>
