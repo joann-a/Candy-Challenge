@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../Landing-page/Font/Poppins-Italic.ttf");
+}
 .candybackground {
     position: absolute;
     width: 505px;
@@ -25,7 +29,7 @@
   
     display: flex;
   
-    font-family: "Poppins";
+    font-family: "Poppins-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 27px;
@@ -215,7 +219,7 @@ height: 36px;
 right: 5%;
 top: 10px;
 
-font-family: Poppins;
+font-family: Poppins-Regular;
 font-style: normal;
 font-weight: 500;
 font-size: 24px;

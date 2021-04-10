@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("../Landing-page/Font/Poppins-Black.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Italic";
+    src: url("../Landing-page/Font/Poppins-Italic.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../Landing-page/Font/Poppins-Italic.ttf");
+  }
 .CandyChallenge {
     position: absolute;
     left: 2%;
@@ -63,12 +75,12 @@
 
 
 position: absolute;
-width: 150px;
+width:500px;
 height: 54px;
 left: 645px;
 top: 84px;
 
-font-family: Poppins;
+font-family: 'Poppins-Black';
 font-style: normal;
 font-weight: bold;
 font-size: 36px;

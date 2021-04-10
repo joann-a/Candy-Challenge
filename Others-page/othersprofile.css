@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Poppins-Black";
+    src: url("../Landing-page/Font/Poppins-Black.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Italic";
+    src: url("../Landing-page/Font/Poppins-Italic.ttf");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("../Landing-page/Font/Poppins-Italic.ttf");
+  }
+  
 .candybackground {
     position: absolute;
     width: 505px;
@@ -81,41 +94,22 @@ bottom: 68.07%;
 .otherName{
     /* Joanna Details */
 position: absolute;
-width: 286px;
+width: 200;
 height: 54px;
 left: 88px;
 top: 340px;
 
-font-family: Poppins;
+font-family: 'Poppins-Italic';
 font-style: normal;
 font-weight: bold;
 font-size: 36px;
 line-height: 54px;
 /* identical to box height */
 
-
 color: #000000;
 }
 
-.details{
-        /*  Details */
-position: absolute;
-width: 286px;
-height: 54px;
-left: 220px;
-top: 340px;
 
-font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 54px;
-/* identical to box height */
-
-
-color: #000000;
-
-}
 
 .Username{
 

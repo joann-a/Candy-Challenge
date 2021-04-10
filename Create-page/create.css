@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("../Landing-page/Font/Poppins-Black.ttf");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../Landing-page/Font/Poppins-Italic.ttf");
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../Landing-page/Font/Poppins-Italic.ttf");
+}
 .candybackground {
   position: fixed;
   width: 505px;
@@ -25,7 +37,7 @@
 
   display: flex;
 
-  font-family: "Poppins";
+  font-family: "Poppins-regular";
   font-style: normal;
   font-weight: normal;
   font-size: 27px;
@@ -72,7 +84,7 @@
   left: 72px;
   top: 120px;
   
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -86,10 +98,10 @@ name.page_name2 {
   position: absolute;
   width: 200px;
   height: 54px;
-  left: 115px;
+  left: 130px;
   top: 35px;
 
-  font-family: Poppins;
+  font-family: Poppins-regular;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
