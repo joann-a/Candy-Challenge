@@ -238,9 +238,7 @@ html {
     /* background-color: lavender; */
   }
 
-  .landing .brand-name {
-    width: 100%;
-  }
+
 
   .landing .navbar {
     left: 30%;
@@ -248,18 +246,21 @@ html {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #about {
-    padding: 3rem;
     font-size: 3rem;
     /* background-color: lavender; */
   }
   #about pre {
-    font-size: 7rem;
+    font-size: 6rem;
     /* background-color: lavender; */
   }
 
   .landing .navbar {
-    left: 60%;
+    left: 55%;
+  }
+
+  .landing .brand-name .img {
+    max-width: 20%;
   }
 }
