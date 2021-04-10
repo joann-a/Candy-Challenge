@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>home </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="create.css">
+        <title>Create new challenge</title>
     </head>
-    <body class = "home">
-        <div class='candy_challenge'>
-            <a href='home.html'>
-                <img src="Candy Challenge.png">
+    <body>
+        <script src="candy.js"></script>
+
+        <img class = "candybackground" src = "Candybackground.png">
+
+        <div class='CandyChallenge'>
+            <a href='homepage.html'>
+                <img src="CandyChallenge.png">
             </a>
         </div>
+
         <div class="navbar">
+            <div class="navbar-item">
+                <a class="navbar-item" href="#"
+                style="color: black;">Candy store</a>
+              </div>
             <div>
-              <a class="navbar-item" href="about.html"
+              <a class="navbar-item" href="contact.html"
               style="color: black;">Contact</a>
             </div>
             <div class="navbar-item">
               <a class="navbar-item" href="about.html"
               style="color: black;">About</a>
             </div>
-            <div class="navbar-item">
-                <a class="navbar-item" href="storepage.html"
-                style="color: black;">Candy Store</a>
-            </div>
-
+            
         </div>
-        <div class = "candy amount">
-            <img src = 'picture/candy.png'>
-            <p>: number </p>
+        
+        <div class = "candy">
+            <img src = 'candy.png'>
+        </div>
+        <div class = "CandyAmount">
+            <p>:
+                <script>document.write(num_candy)</script>
+            </p>
         </div>
         <div class = "home_title">
             <h1>The Home Page</h1>
