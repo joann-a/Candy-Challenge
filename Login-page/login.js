@@ -1,20 +1,24 @@
-function setFormMessage(formElement, type, message) {
-    const messageElement = formElement.querySelector(".form__message");
 
-    messageElement.textContent = message;
-    messageElement.classList.remove("form__message--success", "form__message--error");
-    messageElement.classList.add(`form__message--${type}`);
-}
 
-function setInputError(inputElement, message) {
-    inputElement.classList.add("form__input--error");
-    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
-}
 
-function clearInputError(inputElement) {
-    inputElement.classList.remove("form__input--error");
-    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
-}
+// function setFormMessage(formElement, type, message) {
+//     const messageElement = formElement.querySelector(".form__message");
+
+//     messageElement.textContent = message;
+//     messageElement.classList.remove("form__message--success", "form__message--error");
+//     messageElement.classList.add(`form__message--${type}`);
+// }
+
+
+// function setInputError(inputElement, message) {
+//     inputElement.classList.add("form__input--error");
+//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+// }
+
+// function clearInputError(inputElement) {
+//     inputElement.classList.remove("form__input--error");
+//     inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
     const loginForm = document.querySelector("#login");
@@ -32,23 +36,45 @@ document.addEventListener("DOMContentLoaded", () => {
         createAccountForm.classList.add("form--hidden");
     });
 
+    
+    createAccountForm.addEventListener("submit", e => {
+        e.preventDefault();
+        // sign up
+
+        var name = document.getElementById("signupUsername").value;
+        var email = document.getElementById("signupEmail").value;
+        var password = document.getElementById("signupPassword").value;
+        window.alert(name + " " + email + " " + password);
+
+        
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                // Signed in 
+                var user = userCredential.user;
+                // ...
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // ..
+                alert(errorMessage);
+            });
+        
+        alert("Sign Up");
+    });
+
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
-        // Perform your AJAX/Fetch login
+        // login
+        
 
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
 
-    document.querySelectorAll(".form__input").forEach(inputElement => {
-        inputElement.addEventListener("blur", e => {
-            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 4) {
-                setInputError(inputElement, "Username must be at least 4 characters in length");
-            }
-        });
-
-        inputElement.addEventListener("input", e => {
-            clearInputError(inputElement);
-        });
-    });
+    
 });
+
+
+
+
