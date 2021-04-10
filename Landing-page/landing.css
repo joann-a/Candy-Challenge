@@ -187,15 +187,12 @@ html {
 
 #about {
   /* border: 1px solid red; */
-  margin-top: 15vh;
-  height: 85vh;
+  margin-top: 10vh;
+  height: 90vh;
   width: 100%;
-  padding: 3rem;
   font-size: 2rem;
-  padding: 10rem;
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
 }
 
 #about span {
@@ -210,4 +207,59 @@ html {
   margin: 1rem 0 1rem 0;
   font-family: "Poppins-Italic";
   font-size: 2rem;
+}
+
+@media screen and (min-width: 400px) {
+  .landing {
+    font-size: 2rem;
+  }
+
+  .landing .navbar {
+    left: 10%;
+    top: 7rem;
+  }
+  #about {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .landing {
+    font-size: 2rem;
+  }
+
+  #about {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 2rem;
+    /* background-color: lavender; */
+  }
+  #about pre {
+    font-size: 4rem;
+    /* background-color: lavender; */
+  }
+
+  .landing .brand-name {
+    width: 100%;
+  }
+
+  .landing .navbar {
+    left: 30%;
+    top: 7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about {
+    padding: 3rem;
+    font-size: 3rem;
+    /* background-color: lavender; */
+  }
+  #about pre {
+    font-size: 7rem;
+    /* background-color: lavender; */
+  }
+
+  .landing .navbar {
+    left: 60%;
+  }
 }
