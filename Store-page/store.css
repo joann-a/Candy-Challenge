@@ -1,0 +1,218 @@
+.CandyChallenge {
+    position: absolute;
+    left: 2%;
+    right: 76.39%;
+    top: 3%;
+    bottom: 0%;
+}
+.navbar {
+      
+    position: absolute;
+    width: 400px;
+    height: 27px;
+    left: 70%;
+    top: 5%;
+    justify-content: space-between;
+      
+    display: flex;
+      
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    /* identical to box height */
+      
+    color: black;
+}
+.navbar-item {
+    text-decoration: none;
+}
+    
+.candy {
+    /* number of candy icon */
+        
+    position: absolute;
+    width: 132px;
+    height: 55.21px;
+    left: 3%;
+    top: 64px;
+        
+    
+}
+    
+.CandyAmount {
+        /* text of amount of candies */
+        
+    position: absolute;
+    width: 80px;
+    height: 28px;
+    left: 7%;
+    top: 64px;
+        
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+     line-height: 28px;
+        
+    color: #F45238;
+}
+
+.storeTitle{
+        /* The Candy Store */
+
+
+position: absolute;
+width: 304px;
+height: 54px;
+left: 568px;
+top: 84px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 54px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.giftblock{
+/* Rectangle 9 */
+
+position: absolute;
+left: 9.58%;
+right: 65.14%;
+width : 22%;
+top: 30.21%;
+bottom: 20%;
+
+background: #FFC9B0;
+border-radius: 20px;
+
+}
+.giftname{
+    /* Netflyx gift card */
+
+
+position: absolute;
+left: 2%;
+right: 0%;
+top: 5.7%;
+bottom: 75.78%;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 20px;
+
+color: #000000;
+
+}
+.giftpic{
+    /* Image */
+
+
+position: absolute;
+left: 4%;
+right: 4%;
+top: 22%;
+bottom: 58.01%;
+}
+.circle{
+/* Ellipse 2 */
+
+position: absolute;
+width: 55px;
+height: 55px;
+left: 30px;
+top: 255px;
+border-radius: 30px;
+
+background: #FFFFFF;
+}
+.price{
+    /* : 10000 */
+
+
+position: absolute;
+width: 80px;
+height: 28px;
+left: 100px;
+top: 250px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 28px;
+
+color: #000000;
+
+}
+
+.mygifts{
+    /* Vector */
+
+position: absolute;
+left: 1.67%;
+right: 93.4%;
+top: 60%;
+bottom: 20.67%;
+}
+.mygiftText{
+    /* my gifts */
+
+
+position: absolute;
+width: 114px;
+height: 35px;
+left: 0px;
+top: 40px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+
+color: #000000;
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    height: 7rem;
+    left: 0px;
+    bottom: 0;
+    
+    background: #D3FFFA;
+  }
+
+  .store_icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    top: 5px;
+  }
+
+  .create_icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 47%;
+    top: 5px;
+  }
+
+  .avatar_icon {
+    position: absolute;
+    left: 75.14%;
+    right: 20%;
+    top: 5px;
+  }
