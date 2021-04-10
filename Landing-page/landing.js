@@ -4,7 +4,5 @@ function showMessage() {
   // console.log(submitContactMessage)
   if (submitContactMessage.style.display === "none") {
     submitContactMessage.style.display = "block";
-  } else {
-    submitContactMessage.style.display = "none";
-  }
+  } 
 }

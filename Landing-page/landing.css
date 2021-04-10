@@ -312,6 +312,7 @@ footer {
   width: 130px;
   height: 55px;
   cursor: pointer;
+  outline: none;
 }
 
 .form-button:hover {
@@ -426,8 +427,12 @@ footer {
   }
   #about pre,
   #contact pre {
-    font-size: 6rem;
+    font-size: 3rem;
     /* background-color: lavender; */
+  }
+
+  p {
+    font-size: 1rem;
   }
 
   .landing .navbar {
