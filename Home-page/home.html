@@ -1,113 +1,145 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="home.css">
-        <title>Home page</title>
-    </head>
-    <body>
-        <!-- ↓ The top, background and bottom of the page ↓ -->
-        <script src="candy.js"></script>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <!-- ↓ The top, background and bottom of the page ↓ -->
+    <script src="candy.js"></script>
 
-        <img class = "candybackground" src = "Candybackground.png">
+    <img class="candybackground" src="Candybackground.png" />
 
-        <div class='CandyChallenge'>
-            <a href="../Home-page/home.html">
-                <img src="CandyChallenge.png">
-            </a>
+    <div class="CandyChallenge">
+      <a href="../Home-page/home.html">
+        <img src="CandyChallenge.png" />
+      </a>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="../Store-page/store.html"
+          style="color: black"
+          >Candy store</a
+        >
+      </div>
+      <div>
+        <a
+          class="navbar-item"
+          href="../Landing-page/landing.html#about"
+          style="color: black"
+          >Contact</a
+        >
+      </div>
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="../Landing-page/landing.html#about"
+          style="color: black"
+          >About</a
+        >
+      </div>
+    </div>
+
+    <div class="candy">
+      <img src="candy.png" />
+    </div>
+    <div class="CandyAmount">
+      <p>
+        :
+        <script>
+          document.write(num_candy);
+        </script>
+      </p>
+    </div>
+
+    <div class="bottom">
+      <img src="bottom_bar.png" />
+      <a href="../Store-page/store.html"
+        ><img class="store_icon" src="store_icon.png"
+      /></a>
+      <a href="../Create-page/create.html"
+        ><img class="create_icon" src="create_icon.png"
+      /></a>
+      <a href="../Profile-page/profilepage.html"
+        ><img class="avatar_icon" src="avatar_icon.png"
+      /></a>
+    </div>
+    <!-- ↑ The top, background and bottom of the page ↑ -->
+
+    <div class="page_name1">
+      <p>The <name class="page_name2">HomePage</name></p>
+    </div>
+
+    <!-- ↓ The content of the page ↓ -->
+    <div class="challenge">
+      <!-- ↓ Your challenge ↓ -->
+      <p class="challenge_title">Your Challenges :</p>
+      <button class="challenge_box" onclick="window.alert()">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_icon.png" />
+          <p class="box_username">yiya</p>
         </div>
+        <img class="box_img" src="image.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
 
-        <div class="navbar">
-            <div class="navbar-item">
-                <a class="navbar-item" href="../Store-page/store.html"
-                style="color: black;">Candy store</a>
-              </div>
-            <div>
-              <a class="navbar-item" href="../Landing-page/landing.html#about"
-              style="color: black;">Contact</a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="../Landing-page/landing.html#about"
-              style="color: black;">About</a>
-            </div>
-        </div>
+      <button
+        class="challenge_box"
+        onclick="window.alert(challengeviewing.html);"
+      >
+        Two
+      </button>
+      <button
+        class="challenge_box"
+        onclick="window.open(challengeviewing.html);"
+      >
+        Three
+      </button>
+      <br />
+      <br />
+      <button
+        class="challenge_box"
+        onclick="window.open(challengeviewing.html);"
+      >
+        Four
+      </button>
+      <!-- ↑ Your challenge ↑ -->
 
-        <div class = "candy">
-            <img src = 'candy.png'>
-        </div>
-        <div class = "CandyAmount">
-            <p>:
-                <script>document.write(num_candy)</script>
-            </p>
-        </div>
+      <!-- ↓ Other challenge ↓ -->
+      <p class="challenge_title">Other Challenges :</p>
+      <!-- ↑ Other challenge ↑ -->
 
-        <div class = "bottom">
-            <img src = "bottom_bar.png">
-            <a href = "../Store-page/store.html"><img class = "store_icon" src = "store_icon.png"></a>
-            <a href = "../Create-page/create.html"><img class = "create_icon" src = "create_icon.png"></a>
-            <a href = "../Profile-page/profilepage.html"><img class = "avatar_icon" src = "avatar_icon.png"></a>
-        </div>
-        <!-- ↑ The top, background and bottom of the page ↑ -->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- ↑ The content of the page ↑ -->
 
-        <div class = "page_name1">
-            <p>The <name class = "page_name2">HomePage</name></p>
-        </div>
-
-        <!-- ↓ The content of the page ↓ -->
-        <div class = "challenge">
-            <!-- ↓ Your challenge ↓ -->
-            <p class = "challenge_title">Your Challenges :</p>
-            <button class="challenge_box"
-            onclick="window.open(challengeviewing.html);">
-                <div class = "box_user">
-                    <img class = "box_avatar" src = "avatar_icon.png">
-                    <p class = "box_username">yiya</p>
-                </div>
-                <img class = "box_img" src = "image.png">
-                <p class = "box_text">The challenge content</p>
-            </button>
-
-            <button class="challenge_box"
-            onclick="window.open(challengeviewing.html);">Two</button>
-            <button class="challenge_box"
-            onclick="window.open(challengeviewing.html);">Three</button>
-            <br>
-            <br>
-            <button class="challenge_box"
-                onclick="window.open(challengeviewing.html);">Four</button>
-            <!-- ↑ Your challenge ↑ -->
-
-            <!-- ↓ Other challenge ↓ -->
-            <p class = "challenge_title">Other Challenges :</p>
-            <!-- ↑ Other challenge ↑ -->
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-        <!-- ↑ The content of the page ↑ -->
-
-        <!-- ↓ Other challenge ↓ -->
-        <!-- <div class = "other_challenge">
+    <!-- ↓ Other challenge ↓ -->
+    <!-- <div class = "other_challenge">
             <p class = "your_challenge_title">Other Challenges :</p>
         </div> -->
-        <!-- ↑ Other challenge ↑ -->
+    <!-- ↑ Other challenge ↑ -->
 
-        <!-- <div class = "home_title">
+    <!-- <div class = "home_title">
             <h1>The Home Page</h1>
         </div>
         <div class = "your_challenges">
             <p>Your challenges:</p>
         </div> -->
-        <!--need a script here to control how many challenges you have and if you joined one-->
-        <!-- <div class = "challengeBlock">
+    <!--need a script here to control how many challenges you have and if you joined one-->
+    <!-- <div class = "challengeBlock">
             <a href="challengeViewing.html"> -->
-                <!-- 这个action要之后决定怎么做 ↓-->
-                <!-- <form class = "checkBoxes" action="html_form_action.php" method="get">
+    <!-- 这个action要之后决定怎么做 ↓-->
+    <!-- <form class = "checkBoxes" action="html_form_action.php" method="get">
                     <input type = "checkbox" name = "status" value = "join">
                     <input type="submit" value="confirm">
                 </form>
@@ -147,8 +179,5 @@
                 </a>
             </div>
         </div> -->
-
-
-
-    </body>
+  </body>
 </html>
