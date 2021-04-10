@@ -52,7 +52,21 @@ document.addEventListener("DOMContentLoaded", () => {
     //     });
     // });
 
-    
+   
+    // var database = firebase.database();
+    // function writeUserData(name, email) {
+    //     firebase.database().ref('Users/' + name).set({
+    //         username: name,
+    //         email: email,
+    //     }, (error) => {
+    //         if (error) {
+    //             alert(error.message);
+    //         } else {
+    //             // Data saved successfully!
+    //         }   
+    //     });
+    // }
+
     createAccountForm.addEventListener("submit", e => {
         e.preventDefault();
         // sign up
@@ -61,19 +75,27 @@ document.addEventListener("DOMContentLoaded", () => {
         var email = document.getElementById("signupEmail").value;
         var password = document.getElementById("signupPassword").value;
         
+        
         firebase.auth().createUserWithEmailAndPassword(email, password)
-            .then((userCredential) => {
-                // Signed in 
-                var user = userCredential.user;
-                // ...
-                alert("Sign Up");
-            })
-            .catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                // ..
-                alert(errorMessage);
-            });
+        .then((userCredential) => {
+            // Sign up
+            var user = userCredential.user;
+            // ...
+            alert("Signed up successfully");           
+            
+            
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            
+            alert(errorMessage);
+        });
+
+        
+        
+        
+        
         
         
     });
