@@ -1,5 +1,5 @@
 .candybackground {
-  position: absolute;
+  position: fixed;
   width: 505px;
   height: 1263px;
   right: 10%;
