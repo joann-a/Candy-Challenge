@@ -75,6 +75,10 @@ html {
   font-family: "Poppins-Italic";
   src: url("Font/Poppins-Italic.ttf");
 }
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("Font/Poppins-Medium.ttf");
+}
 
 .landing .tag-line {
   /* Ambition Excellence */
@@ -167,7 +171,8 @@ html {
   margin: 0px 10px;
 }
 
-#about {
+#about,
+#contact {
   /* border: 1px solid red; */
   margin-top: 10vh;
   height: 90vh;
@@ -179,114 +184,21 @@ html {
   position: relative;
 }
 
-#about span {
+#about span,
+#contact span {
   color: rgb(207, 57, 82);
 }
 
-#about pre {
+#about pre,
+#contact pre {
   font-size: 7rem;
 }
 
-#about h1 {
+#about h1,
+#contact h1 {
   margin: 1rem 0 1rem 0;
   font-family: "Poppins-Italic";
   font-size: 2rem;
-}
-
-@media screen and (min-width: 400px) {
-  .landing {
-    font-size: 2rem;
-  }
-
-  pre {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .candy-dotpoint {
-    /* border: 1px solid red; */
-    position: absolute;
-    left: 325px;
-    top: 280px;
-  }
-
-  img {
-    size: 2rem;
-  }
-
-  .landing .navbar {
-    left: 10%;
-    top: 7rem;
-  }
-  #about {
-    font-size: 1rem;
-    padding: 2rem;
-  }
-
-  #about h1 {
-    font-size: 1.5rem;
-  }
-
-  #about pre {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .landing {
-    font-size: 2rem;
-  }
-
-  #about {
-    padding: 1rem 2rem 1rem 2rem;
-    font-size: 2rem;
-    /* background-color: lavender; */
-  }
-  #about pre {
-    font-size: 4rem;
-    /* background-color: lavender; */
-  }
-
-  .landing .navbar {
-    left: 10%;
-    top: 7rem;
-    border-radius: 10%;
-    background-color: rgba(255, 255, 255, 0.479);
-    z-index: 2;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .landing .navbar {
-    height: 27px;
-    left: 50%;
-    top: 5%;
-  }
-}
-
-@media screen and (min-width: 1444px) {
-  #about {
-    font-size: 2rem;
-    /* background-color: lavender; */
-    padding: 10rem;
-  }
-  #about pre {
-    font-size: 6rem;
-    /* background-color: lavender; */
-  }
-
-  .landing .navbar {
-    height: 27px;
-    left: 70%;
-    top: 5%;
-  }
-
-  .landing .brand-name .img {
-    max-width: 20%;
-  }
 }
 
 .landing .navbar {
@@ -321,4 +233,196 @@ html {
 
 .navbar-item:hover {
   color: rgb(243, 72, 101);
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.earth {
+  margin-top: 6rem;
+}
+
+footer {
+  background-color: rgb(155, 231, 218);
+  clear: both;
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-media {
+  /* border: 1px solid red; */
+  height: 100px;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #0c5e61;
+}
+
+.copyright {
+  font-family: "Poppins-Medium";
+  font-size: 1rem;
+  margin-bottom: .7rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: 40vw;
+  height: 30vh;
+  justify-content: space-around;
+}
+
+.form-about {
+  height: 10vh;
+}
+
+
+.form-input {
+  font-family: "Poppins-Medium";
+  padding: 1rem;
+  border-radius: .5rem;
+  border: 1px solid rgb(214, 214, 214);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-button {
+  color: white;
+  background-color: rgb(102, 211, 202);
+  transition: all 1s;
+  border: none;
+  border-radius: 11px;
+  padding: 10px;
+  width: 130px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: rgb(22, 177, 164);
+  color: white;
+}
+
+.form-input:hover {
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 400px) {
+  .landing {
+    font-size: 2rem;
+  }
+
+  pre {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .candy-dotpoint {
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 325px;
+    top: 280px;
+  }
+
+  img {
+    size: 2rem;
+  }
+
+  .landing .navbar {
+    left: 10%;
+    top: 7rem;
+  }
+  #about,
+  #contact {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+
+  #about h1,
+  #contact h1 {
+    font-size: 1.5rem;
+  }
+
+  #about pre,
+  #contact pre {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .landing {
+    font-size: 2rem;
+  }
+
+  #about,
+  #contact {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 2rem;
+    /* background-color: lavender; */
+  }
+  #about pre,
+  #contact pre {
+    font-size: 4rem;
+    /* background-color: lavender; */
+  }
+
+  .landing .navbar {
+    left: 10%;
+    top: 7rem;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.479);
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .landing .navbar {
+    height: 27px;
+    left: 50%;
+    top: 5%;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  #about,
+  #contact {
+    font-size: 2rem;
+    /* background-color: lavender; */
+    padding: 10rem;
+  }
+  #about pre,
+  #contact pre {
+    font-size: 6rem;
+    /* background-color: lavender; */
+  }
+
+  .landing .navbar {
+    height: 27px;
+    left: 70%;
+    top: 5%;
+  }
+
+  .landing .brand-name .img {
+    max-width: 20%;
+  }
 }
