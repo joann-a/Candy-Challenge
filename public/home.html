@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home page</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>   
+  </head>
+  <body>
+    <script src="color.js"></script>
+    <!-- ↓ The top, background and bottom of the page ↓ -->
+    <script src="candy.js"></script>
+
+    <img class="candybackground" src="Candybackground.png" />
+
+    <div class="CandyChallenge">
+      <a href="home.html">
+        <img src="CandyChallenge.png" />
+      </a>
+    </div>
+
+    <div class="navbar">
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="store.html"
+          style="color: black"
+          >Candy store</a
+        >
+      </div>
+      <div>
+        <a
+          class="navbar-item"
+          href="landing.html#about"
+          style="color: black"
+          >Contact</a
+        >
+      </div>
+      <div class="navbar-item">
+        <a
+          class="navbar-item"
+          href="landing.html#about"
+          style="color: black"
+          >About</a
+        >
+      </div>
+    </div>
+
+    <div class="candy">
+      <img src="candy.png" />
+    </div>
+    <div class="CandyAmount">
+      <p>
+        :
+        <script>
+          document.write(num_candy);
+        </script>
+      </p>
+    </div>
+
+    <div class="bottom">
+      <img src="bottom_bar.png" />
+      <a href="store.html"
+        ><img class="store_icon" src="store_icon.png"
+      /></a>
+      <a href="create.html"
+        ><img class="create_icon" src="create_icon.png"
+      /></a>
+      <a href="profilepage.html"
+        ><img class="avatar_icon" src="avatar_yiya.png"
+      /></a>
+    </div>
+    <!-- ↑ The top, background and bottom of the page ↑ -->
+
+    <div class="page_name1">
+      <p>The <name class="page_name2">HomePage</name></p>
+    </div>
+
+    <!-- ↓ The content of the page ↓ -->
+    <div class="challenge">
+      <!-- ↓ Your challenge ↓ -->
+      <p class="challenge_title">Your Challenges :</p>
+
+      <button class="challenge_box" style="background-color: #FFC9B0;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_adsa.png" />
+          <p class="box_username">Adsa</p>
+        </div>
+        <img class="box_img" src="image_workhard.png" />
+        <p class="box_text">
+            Running challenge!
+        </p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #FAE056;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_yiya.png" />
+          <p class="box_username">Yiya</p>
+        </div>
+        <img class="box_img" src="image_red.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #CFE217;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_zhikai.png" />
+          <p class="box_username">Zhikai</p>
+        </div>
+        <img class="box_img" src="image_questions.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <br />
+      <br />
+      <!-- ↑ Your challenge ↑ -->
+
+      <!-- ↓ Other challenge ↓ -->
+      <p class="challenge_title">Other Challenges :</p>
+
+      <button class="challenge_box" style="background-color: #8FCDF4;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_joanna.png" />
+          <p class="box_username">Joanna</p>
+        </div>
+        <img class="box_img" src="image_black.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #FFB5A9;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_bruce.png" />
+          <p class="box_username">Bruce</p>
+        </div>
+        <img class="box_img" src="image_colorful.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #F1BB8A;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_joanna.png" />
+          <p class="box_username">Joanna</p>
+        </div>
+        <img class="box_img" src="image_idicator.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #E18B8B;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_yiya.png" />
+          <p class="box_username">Yiya</p>
+        </div>
+        <img class="box_img" src="image_colorful.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+
+      <button class="challenge_box" style="background-color: #ADCCC8;"
+      onclick="window.location = 'challengeviewing.html'">
+        <div class="box_user">
+          <img class="box_avatar" src="avatar_zhikai.png" />
+          <p class="box_username">Zhikai</p>
+        </div>
+        <img class="box_img" src="image_red.png" />
+        <p class="box_text">The challenge content</p>
+      </button>
+      <!-- ↑ Other challenge ↑ -->
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- ↑ The content of the page ↑ -->
+  </body>
+</html>
