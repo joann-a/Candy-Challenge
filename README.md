@@ -1,5 +1,6 @@
 # Candy-Challenge
-Our web app for Chronicle Hackathon 2021 <br>
+Our web app for Chronicle Hackathon 2021 
+
 Link: https://candy-challenge.web.app/landing.html <br>
 Link to figma: https://www.figma.com/file/rliZ9Is5REwjoOzsLJpyfp/Candy?node-id=0%3A1
 
